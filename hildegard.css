@@ -1,10 +1,13 @@
 p {
-	color: green;
+	color: white;
 	font-family: 'Times New Roman', Times, serif;
 }
 
 body {
-	background-image: radial-gradient(#5885AF, #41729F);
+	animation: backgroundChanger 5000ms;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+
 }
 
 .liam {
@@ -12,6 +15,7 @@ body {
 	font-family: 'Courier New', Courier, monospace;
 	border-width: 5px;
 	background-image: linear-gradient(#A80FFA,#2D2564 / 75%);
+	text-align: center;
 }
 
 .lyss {
@@ -20,6 +24,7 @@ body {
 	border-width: 5px;
 	float: right;
 	background-image: linear-gradient(#BDF0D6, #B4F8C8 / 75%);
+	text-align: center;
 }
 
 .container {
@@ -46,4 +51,26 @@ h2{
 br {
 	font-size: 9px;
 }
-/*TODO: Fix backgrounds*/
+
+@keyframes backgroundChanger {
+	from {background-color: #000b6f;}
+	to {background-color: #000851;}
+}
+
+/* @keyframes liamSpinner{
+	0%{
+		transform: rotate(0turn);
+	}
+	25%{
+		transform: rotate(.25turn);
+	}
+	50%{
+		transform: rotate(.5turn);
+	}
+	75%{
+		transform: rotate(.75turn);
+	}
+	100%{
+		transform: rotate(1turn);
+	}
+} */
